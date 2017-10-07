@@ -8,7 +8,6 @@ class Modal extends Component {
 
   componentWillReceiveProps(props){
     if( props.text !== this.state.modalText ){
-      console.log('componentDidUpdate')
       this.setState({
         className: 'book-modal is-visible',
         modalText: props.text
