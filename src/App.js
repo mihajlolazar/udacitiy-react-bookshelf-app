@@ -85,7 +85,6 @@ class BooksApp extends React.Component {
   render() {
     const books = this.state.books;
 
-
     return (
       <BrowserRouter>
         <div className="app">
@@ -126,7 +125,7 @@ class BooksApp extends React.Component {
                 <div className="list-books-title">
                   <h1>MyReads</h1>
                 </div>
-                {Object.keys(this.state.shelves).length && (
+                {Object.keys(this.state.shelves).length > 0 && (
                   <div className="list-books-content">
                     <div>
                       {
